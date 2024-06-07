@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 6</name>
+    <events>
+        <event-block sid="4265912991250068">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1881399593066261" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="3947999122230482" type="Mouse">
+                    <param id="0" name="Cursor style">7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3581961962799318">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="910537628792912" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="4113656865130741" type="Browser">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7452693310367935">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="4204832205587236" type="black" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="9766932766024238" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="7004342367225479" type="logo" />
+            </actions>
+        </event-block>
+        <event-block sid="5147181442622919">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="7619511474308615" type="logo" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="4812547484401968" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1149039440805138" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

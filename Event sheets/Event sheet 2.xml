@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="753586006850667">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9287643918474349" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8899024243814712" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7875300178428485">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8235909898391593" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4809570975992167" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1710433568467987">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6459999153482053" type="Sprite">
+                    <param id="0" name="Object">crop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8479682139611074" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="258268582272656" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9350531888356688" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="7136030593477015" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2793158115845039" type="Sprite">
+                    <param id="0" name="Pin to">crop</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="3548465738837867" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="42036038356524" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="35211469346387">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6470588736613868" type="Sprite">
+                    <param id="0" name="Object">crop2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="3181586585212129" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="1753217044173868" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7582255979136822" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5193267524695546" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9724044455398828" type="Sprite">
+                    <param id="0" name="Pin to">crop2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="7464482847042602" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="2161194771402995" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="9648337162144069">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="13783702148875" type="Sprite">
+                    <param id="0" name="Object">crops</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="1138184505493429" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="3839952037589838" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8377940842106095" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="7843345895713778" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="8085906614750132" type="Sprite">
+                    <param id="0" name="Jump strength">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="6763725403311311" type="Sprite">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="7109237467970403" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="7075580673462909">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="833038709141681" type="Sprite">
+                    <param id="0" name="Object">deadZone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="2566376246585866" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="5309283729736835" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4045075565831244" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6249321615524182" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="3279673925359511" type="Sprite">
+                    <param id="0" name="Jump strength">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="4160919067448273" type="Sprite">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9986323446071677" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="190083426563718">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6978208544179012" type="Sprite">
+                    <param id="0" name="Object">bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="4702461429637534" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="4918162174887019" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="124324851766586" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="456042721595997" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="2653516111866009" type="Sprite">
+                    <param id="0" name="Jump strength">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="6526680560063988" type="Sprite">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="6771445495402974" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="6157512665316288">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8293041320380593" type="Sprite">
+                    <param id="0" name="Object">turretBullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="9293952078450768" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="8894336475399827" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action behavior="Turret" id="5" name="Set enabled" sid="9092578383470127" type="turret">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3633639748065053" type="turret">
+                    <param id="0" name="Angle">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2732695979388261" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6878771555595091" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="1357787329925137" type="Sprite">
+                    <param id="0" name="Jump strength">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="1018803562895376" type="Sprite">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9243212605736544" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="7783629736922881">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="7176300249203326" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="5725616134861206" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="737777985757155">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1503870592307826" type="Sprite">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8134632442525314" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="5373404187823816" type="Audio">
+                    <param id="0" name="Audio file">complete</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8998063202805188" type="Sprite" />
+                <action id="-3" name="Create object" sid="1957064180349816" type="System">
+                    <param id="0" name="Object to create">focus</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite.X</param>
+                    <param id="3" name="Y">Sprite.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="7685837991080227" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8310659042320037" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">&quot;8&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8484649599339355" type="System">
+                    <param id="0" name="Layout">loading</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="299906182874904">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6380106283229267" type="Sprite">
+                    <param id="0" name="Object">fakePortal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5710633775382399" type="fakePortal" />
+                <action id="0" name="Play" sid="5772070460123625" type="Audio">
+                    <param id="0" name="Audio file">Zvuki-dlya_video_01</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3016780945608047">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5043194923035341" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.5,1.5)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9402288198684849" type="gun">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3592754381829076" type="bullet">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="0" name="Play" sid="6212926451584076" type="Audio">
+                    <param id="0" name="Audio file">ump45-1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="4673499286172229">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5305933770453386" type="bullet">
+                    <param id="0" name="Object">TiledBackground2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="7801665215129162" type="bullet">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1109019786988316" type="bullet">
+                    <param id="0" name="Object">secretBlocks2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1025279934870925" type="bullet">
+                    <param id="0" name="Object">fakePlatform2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8747470777993328" type="bullet">
+                    <param id="0" name="Object">trollPlatform2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4086761538573411" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="317978109801155">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1506291434702977" type="turretBullet">
+                    <param id="0" name="Object">TiledBackground2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="6817607117113478" type="turretBullet">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="3589431313525086" type="turretBullet">
+                    <param id="0" name="Object">secretBlocks2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="9959146430214175" type="turretBullet">
+                    <param id="0" name="Object">fakePlatform2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="2650700024027081" type="turretBullet">
+                    <param id="0" name="Object">trollPlatform2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1918469330885624" type="turretBullet" />
+            </actions>
+        </event-block>
+        <event-block sid="8657560671018008">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3435919047891697" type="Sprite">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5899029536345359" type="button" />
+                <action id="0" name="Play" sid="7331613260013852" type="Audio">
+                    <param id="0" name="Audio file">Metal Gear Solid- Alert (!)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="1504659037049463" type="crops">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7496842140617985" type="System">
+                    <param id="0" name="Seconds">0.7</param>
+                </action>
+                <action id="-3" name="Create object" sid="2582320416349619" type="System">
+                    <param id="0" name="Object to create">broke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">crops.X</param>
+                    <param id="3" name="Y">crops.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2612382097084444" type="crops" />
+                <action id="0" name="Play" sid="3525923198450605" type="Audio">
+                    <param id="0" name="Audio file">rock damage a3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3460037660581002">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7502257886225724" type="Sprite">
+                    <param id="0" name="Object">trap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1997544147085906" type="Audio">
+                    <param id="0" name="Audio file">Metal Gear Solid- Alert (!)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1712614437935948" type="trap" />
+                <action behavior="Physics" id="21" name="Set immovable" sid="5300291574400448" type="crop2">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="5983994831389554" type="crop2">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">-0.7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5677330920118524" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="8931701365864122" type="crop2">
+                    <param id="0" name="Setting">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2159888940985895">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4215422436368043" type="Sprite">
+                    <param id="0" name="Object">trap2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1601952058148937" type="Audio">
+                    <param id="0" name="Audio file">Zvuki-dlya_video_01</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5215496518577699" type="trap2" />
+                <action id="-3" name="Create object" sid="205281330699465" type="System">
+                    <param id="0" name="Object to create">trollPlatform2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">336</param>
+                    <param id="3" name="Y">580</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9542142867073985">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="8175836707113193" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7612988062590059" type="Audio">
+                    <param id="0" name="Audio file">jump</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9678278422391036">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="558220771442938" type="Sprite">
+                    <param id="0" name="Object">richag</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2246068647125648" type="richag">
+                    <param id="0" name="Animation">&quot;Clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="880588588334684" type="Audio">
+                    <param id="0" name="Audio file">xbow_place_02</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1798110583224668">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6989769228511911" type="Sprite">
+                    <param id="0" name="Object">richag2</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="2085057412951448" type="richag2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="876144984008533" type="richag2">
+                    <param id="0" name="Animation">&quot;Clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="6142634745814475" type="Audio">
+                    <param id="0" name="Audio file">xbow_place_02</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="838413947871143" type="richag2">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1342501376406561">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="6261259663289171" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2110034521721128">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8162657870410468" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="9528750839851356" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="3080265902350035" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4983657012500074">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9237081068584908" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2170089221205296" type="Audio">
+                    <param id="0" name="Audio file">Super Mario World 2- Yoshi&apos;s Island Music (SNES) Castle</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;gamemusic&quot;</param>
+                </action>
+                <action behavior="Turret" id="1" name="Add object to target" sid="8643775003907818" type="turret">
+                    <param id="0" name="Target">Sprite</param>
+                </action>
+                <action id="-9" name="Set value" sid="3862791221637897" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;Levels&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5609321729243009">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="9687740860479065" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="3460472097782342" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                    <param id="1" name="Value">levelName</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6816442711846952">
+            <conditions>
+                <condition id="3" inverted="1" name="Local key exists" sid="6630891676895878" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="4846632213509749" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                    <param id="1" name="Value">levelName</param>
+                </action>
+                <action id="-9" name="Set value" sid="6903972738545397" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">&quot;1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4273318303726456">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8309565858774622" type="Sprite">
+                    <param id="0" name="Object">secretBlocks2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="150684257636916" type="secret">
+                    <param id="0" name="Instance variable">found</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4976596578408876" type="secretBlocks2">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="3392306155335838" type="secret">
+                    <param id="0" name="Instance variable">found</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2320546442650516">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="8771507228085438" type="secret" />
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="6801028369543591" type="Sprite">
+                    <param id="0" name="Object">secretBlocks2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="6259098038944038" type="secretBlocks2">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3044058287497124">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8483891045644734" type="secret">
+                    <param id="0" name="Instance variable">found</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4426650129737622" type="secret">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9117105383352372">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="1181856086259867" type="secret">
+                    <param id="0" name="Instance variable">found</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="345998035247057" type="secret">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2043755450851334">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="8258948835265212" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="3136438019140127" type="Audio">
+                            <param id="0" name="Audio file">complete</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4487403121570359">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="1701526200857156" type="secret" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="5272640738166446" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9844716553676436" type="secret" />
+            </actions>
+        </event-block>
+        <event-block sid="3485275464906522">
+            <conditions>
+                <condition behavior="Turret" id="2" name="On target acquired" sid="963316593893936" type="turret" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2335764554157139" type="Audio">
+                    <param id="0" name="Audio file">Metal Gear Solid- Alert (!)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5885059708943241">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="85024016003895" type="turret" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="872312115342163">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7405163039130785" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="6722300751219576" type="turret">
+                            <param id="0" name="Object">turretBullet</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2285708998938138" type="Audio">
+                            <param id="0" name="Audio file">aug-1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

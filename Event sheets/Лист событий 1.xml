@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Лист событий 1</name>
+    <events>
+        <variable constant="0" name="levelName" sid="7854343333167595" static="0" type="text">1</variable>
+        <event-block sid="4126970791269278">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2707028345065323" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="3922955270664884" type="cursor">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="1795103928234497" type="Mouse">
+                    <param id="0" name="Cursor style">7</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5238468879372737" type="lazerBullet">
+                    <param id="0" name="Object">laserPatricles</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3014765911586077">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3618658787492765" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3671846987146678" type="Audio">
+                    <param id="0" name="Audio file">menu</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9296953232382824" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;Levels&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="620492236956519">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="3129064577917049" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="3607654520317837" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                    <param id="1" name="Value">levelName</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1178091948745403">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2583817913998104" type="Mouse">
+                    <param id="0" name="Object">button1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9749753216533018" type="button1">
+                    <param id="0" name="Animation">&quot;Click&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5571215770307453">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="424062775942516" type="Mouse">
+                    <param id="0" name="Object">button1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7437245525324651" type="button1">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5230552283371051">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9777574048655303" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">button1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4549753106817628" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6067571249904622" type="System">
+                    <param id="0" name="Layout">loading</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5603566750562062">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="7677416072508089" type="Mouse">
+                    <param id="0" name="Object">exitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8722661258850543" type="exitButton">
+                    <param id="0" name="Animation">&quot;Click&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5408291509519663">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8477609893060093" type="Mouse">
+                    <param id="0" name="Object">exitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2047401457586548" type="exitButton">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2495103145228242">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="777938618283265" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">exitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2795038360116988" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="1" name="Close" sid="1786432092527704" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="5617370325177584">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="995856577975407" type="Mouse">
+                    <param id="0" name="Object">optionsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2753138365277783" type="optionsButton">
+                    <param id="0" name="Animation">&quot;Click&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3806429663015377">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="505414385306418" type="Mouse">
+                    <param id="0" name="Object">optionsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9894166611226725" type="optionsButton">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3776037159581972">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9412623683552695" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">optionsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9182908347430273" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8511106659472153">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7853162045582421" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="1507793455988708" type="Sprite">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="806833848179622">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1052942787395984" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.5,1.5)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="689619086531254" type="laserGun">
+                    <param id="0" name="Object">lazerBullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="2823576037749325" type="lazerBullet">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9448605235316423">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5710393075722291" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.5,1.5)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="3383005202926584" type="gun">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="2350739415235659" type="bullet">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4046047968797199">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3339514234373267" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6515330433441499" type="electroschocker">
+                    <param id="0" name="Animation">&quot;Electro&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="9069014481588924" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="4669931235937984" type="electroschocker">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7242010535132339">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3754165402246949" type="lazerBullet">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="2733521444789885" type="lazerBullet">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9632899856614308" type="lazerBullet" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="9022726290590116">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5521129496681063" type="bullet">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="7295456942288637" type="bullet">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4861152900797671" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="9604448835384404">
+            <conditions>
+                <condition id="3" inverted="1" name="Local key exists" sid="4400850946725371" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="8717582088878263" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                    <param id="1" name="Value">levelName</param>
+                </action>
+                <action id="-9" name="Set value" sid="2969764306208237" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">&quot;1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

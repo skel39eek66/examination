@@ -1,0 +1,1052 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Лист событий 7</name>
+    <events>
+        <event-block sid="7583237567946368">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9712611964020734" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2016505835186393" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9765777845121369">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6645118973498813" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4354547414666397" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8677005422746621">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4821207745424914" type="Sprite">
+                    <param id="0" name="Object">crop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8141697810691502" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2268658357771152" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7130529172955375" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4707816288073896" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6365054475888171" type="Sprite">
+                    <param id="0" name="Pin to">crop</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="9345230981337415" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="5173971511530097" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="7935896551277763">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="806313363020614" type="Sprite">
+                    <param id="0" name="Object">crop2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8602484676521527" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="301500245168163" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5129898228513875" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4576624169308198" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6674240219072897" type="Sprite">
+                    <param id="0" name="Pin to">crop2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="2616088923901119" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="5678171775463482" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="9258331971307825">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4097564125274722" type="Sprite">
+                    <param id="0" name="Object">crop3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="597917371955373" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2964151516984348" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5435158044655192" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="180737147472559" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7177106058936937" type="Sprite">
+                    <param id="0" name="Pin to">crop3</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="7760625188201082" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="8001597366261854" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="5587423447392717">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4512316865730559" type="Sprite">
+                    <param id="0" name="Object">crops</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="2372742370255583" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2804817593695364" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8887301882856183" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8273475647875339" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="446228291343802" type="Sprite">
+                    <param id="0" name="Jump strength">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="5358023476199357" type="Sprite">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="4914130723153413" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="7470407783569528">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="370615573404257" type="Sprite">
+                    <param id="0" name="Object">deadZone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="5059579641468747" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="7785628062815724" type="Audio">
+                    <param id="0" name="Audio file">dead2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="250934732466741" type="Sprite" />
+                <action id="-3" name="Create object" sid="4679234838752311" type="System">
+                    <param id="0" name="Object to create">fall</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite.X</param>
+                    <param id="3" name="Y">Sprite.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="7039274289625313" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="5993153322351764" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="6380877635799676">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5001216656965731" type="Sprite">
+                    <param id="0" name="Object">bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="2932696178351729" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2811644234847072" type="Audio">
+                    <param id="0" name="Audio file">dead</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8982193122696441" type="Sprite">
+                    <param id="0" name="Object">blood</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5288494378436608" type="Sprite">
+                    <param id="0" name="Animation">&quot;dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="956557328025648" type="Sprite">
+                    <param id="0" name="Jump strength">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="3759275514766519" type="Sprite">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3398701014705756" type="Sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="1340491645893372">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="4850008000447907" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="4376714524580139" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="5351844221793692">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6122434839630477" type="Sprite">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="109657450799578" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2560794262550415" type="Audio">
+                    <param id="0" name="Audio file">complete</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3451309258548669" type="Sprite" />
+                <action id="-3" name="Create object" sid="1437870963198342" type="System">
+                    <param id="0" name="Object to create">focus</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite.X</param>
+                    <param id="3" name="Y">Sprite.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="6479405356831954" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5125183236173051" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">&quot;6&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="5738496395513645" type="System">
+                    <param id="0" name="Layout">loading</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5867227006459627">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7828515288436931" type="System">
+                    <param id="0" name="Interval (seconds)">random(0.5,1.5)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1653012587784214" type="Audio">
+                    <param id="0" name="Audio file">ump45-1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9876367307439995" type="gun">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7507050011401319" type="bullet">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7333261336800367">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="938410404040223" type="bullet">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="384179717226664" type="bullet">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9493324805920228" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="534127625206975">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4913973285877009" type="Sprite">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8892380140971903" type="button" />
+                <action behavior="Platform" id="11" name="Set enabled" sid="894124451734817" type="crops">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4596170230453678" type="System">
+                    <param id="0" name="Seconds">0.7</param>
+                </action>
+                <action id="-3" name="Create object" sid="4078132608788414" type="System">
+                    <param id="0" name="Object to create">broke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">crops.X</param>
+                    <param id="3" name="Y">crops.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7128843435271204" type="crops" />
+                <action id="0" name="Play" sid="5854744679112215" type="Audio">
+                    <param id="0" name="Audio file">rock damage a3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9747479990662434">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7368799484846688" type="Sprite">
+                    <param id="0" name="Object">trap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6693391919035271" type="Audio">
+                    <param id="0" name="Audio file">Metal Gear Solid- Alert (!)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2616210220678771">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9809377609252987" type="trap">
+                            <param id="0" name="Unique ID">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2376967912768906" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9056503232850391">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="6754521585570391" type="crop2">
+                                    <param id="0" name="Unique ID">119</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4357472357175316" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="319412250574037" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7749544278966869" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="9511774901234463" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3708756463251721">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6877519627102951" type="trap">
+                            <param id="0" name="Unique ID">126</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7466421252287151" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2706771274664083">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="1037682429156029" type="crop2">
+                                    <param id="0" name="Unique ID">124</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4787861041713863" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="7562774218105744" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7472305819090001" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="113380700236913" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4617580785163648">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8608366925575282" type="trap">
+                            <param id="0" name="Unique ID">127</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7035351799830865" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3644808859029397">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9187261493425344" type="crop2">
+                                    <param id="0" name="Unique ID">125</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="6235121185819256" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="9656735191188642" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2836413775973907" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="8488109256168457" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8359792789953999">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6026285880913073" type="trap">
+                            <param id="0" name="Unique ID">151</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6197069987655889" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6672732243698389">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="8194431454274979" type="crop2">
+                                    <param id="0" name="Unique ID">147</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="6048508101123114" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="4848784386880952" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7870092930395266" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="3468651774212398" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7088665296030873">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="4092867120066572" type="trap">
+                            <param id="0" name="Unique ID">152</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="339814632253356" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3985800988428086">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="8439324585738012" type="crop2">
+                                    <param id="0" name="Unique ID">148</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="2140372342630399" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="5499333626862041" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="3316366996010934" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4872145749852767" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="6650742770886225">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="1059184680453748" type="trap">
+                            <param id="0" name="Unique ID">153</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7092487035399083" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9630546398198829">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9022529369856523" type="crop2">
+                                    <param id="0" name="Unique ID">150</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="5399853444738935" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="9997431500971505" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4491197571409374" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="707561990760777" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3664424205546439">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3589263140673316" type="trap">
+                            <param id="0" name="Unique ID">154</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="33307745346378" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8942350593739923">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="6956620861720204" type="crop2">
+                                    <param id="0" name="Unique ID">149</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4783885669484344" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="819713479618277" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7851455290549271" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="1936340114897968" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1093917464480691">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="5004755690215297" type="trap">
+                            <param id="0" name="Unique ID">186</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5229451757376586" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4859008245783838">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="7113315184224684" type="crop2">
+                                    <param id="0" name="Unique ID">176</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="80258274660871" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="1494491990182179" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="79622624687953" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4866478791718282" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7962693957492078">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="5114259884695423" type="trap">
+                            <param id="0" name="Unique ID">187</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2483725073244815" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7967554334951063">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="2547697460385155" type="crop2">
+                                    <param id="0" name="Unique ID">177</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="6656401911448678" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="522726877193167" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2950712050613664" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="198380167288949" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9856962924249434">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3842749841094132" type="trap">
+                            <param id="0" name="Unique ID">188</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1942471630611768" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6333539050007221">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="1912001737111676" type="crop2">
+                                    <param id="0" name="Unique ID">178</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="2196283998697818" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="8768551649168407" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2957485115443088" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="8176210653548911" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9399085513289607">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6726013038092195" type="trap">
+                            <param id="0" name="Unique ID">189</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1594017993562071" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1820233344665745">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9440184838132138" type="crop2">
+                                    <param id="0" name="Unique ID">179</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="1970729474784304" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="7910539134123712" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1435464831534988" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="5782450867683701" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9293086782233836">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3888699080539443" type="trap">
+                            <param id="0" name="Unique ID">190</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3903954578642016" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1730567373522329">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="2857653200093033" type="crop2">
+                                    <param id="0" name="Unique ID">180</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="994033532588957" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="3071506648756469" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7645771467506869" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="2503752673785522" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1697301178036511">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="7893122319190096" type="trap">
+                            <param id="0" name="Unique ID">191</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2932467539533362" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6166789257042403">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="4926215545899784" type="crop2">
+                                    <param id="0" name="Unique ID">181</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="8979792610150924" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="5702463511202766" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4637151375731027" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="6081453534980341" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9655050598626478">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8643261094677269" type="trap">
+                            <param id="0" name="Unique ID">192</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3366626761514286" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6230881273337496">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="4450940244053667" type="crop2">
+                                    <param id="0" name="Unique ID">182</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="1109291668718344" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="9239752857299447" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1759318495918378" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="7764906663570245" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2390256619322256">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="4073600253884851" type="trap">
+                            <param id="0" name="Unique ID">193</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2870659226952674" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3315636169051738">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="7018976572876536" type="crop2">
+                                    <param id="0" name="Unique ID">183</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="2532087588155136" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="2159783594533319" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="3890348738586604" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4613358581236127" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4138667067374413">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="477234609425023" type="trap">
+                            <param id="0" name="Unique ID">194</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8775127979421093" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2524143725744945">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="2337445033367518" type="crop2">
+                                    <param id="0" name="Unique ID">184</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="5136740688629678" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="8608773902444439" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7423698084394091" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="6649145952227792" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3356090738962267">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="4883609245545472" type="trap">
+                            <param id="0" name="Unique ID">195</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1192607030038757" type="trap" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2920273471493598">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="1885992806900926" type="crop2">
+                                    <param id="0" name="Unique ID">185</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="4233452101439913" type="crop2">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="4253407816047841" type="crop2">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-0.7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5705520241093356" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="6220105231543955" type="crop2">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5080951955471491">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="1613491473469807" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9755604250815768" type="Audio">
+                    <param id="0" name="Audio file">jump</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1270236473054916">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3673783045465027" type="Sprite">
+                    <param id="0" name="Object">richag</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="469478966782745" type="richag">
+                    <param id="0" name="Animation">&quot;Clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="9965981144874501" type="Audio">
+                    <param id="0" name="Audio file">xbow_place_02</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="4481644650773776" type="crop3">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="2505784454237786" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7728049305312014" type="crop3" />
+            </actions>
+        </event-block>
+        <event-block sid="4401720023866188">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4369640080097027" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="6692612107986051" type="Audio">
+                    <param id="0" name="Tag">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1689832682435831" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7357483910908162">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3686224767455359" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5124535193601673" type="Audio">
+                    <param id="0" name="Audio file">tile</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;gamemusic&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5073979961423115" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;Levels&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1500993026583356">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="9478174828045723" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="1193129333564301" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                    <param id="1" name="Value">levelName</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9581032405069236">
+            <conditions>
+                <condition id="3" inverted="1" name="Local key exists" sid="5082176644448118" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="8226485472340189" type="WebStorage">
+                    <param id="0" name="Key">&quot;Levels&quot;</param>
+                    <param id="1" name="Value">levelName</param>
+                </action>
+                <action id="-9" name="Set value" sid="9835292832273387" type="System">
+                    <param id="0" name="Variable">levelName</param>
+                    <param id="1" name="Value">&quot;1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

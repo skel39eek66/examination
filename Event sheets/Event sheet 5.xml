@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 5</name>
+    <events>
+        <event-block sid="1191610349449818">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1373198478303536" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8744683109961295" type="Audio">
+                    <param id="0" name="Audio file">win</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8917756905034919">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2217505167452089" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="4658553141102617" type="cursor">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="9813759962963241" type="Mouse">
+                    <param id="0" name="Cursor style">7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6442439980341819">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1487343544430191" type="Mouse">
+                    <param id="0" name="Object">LINK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="630892929288518" type="cursor">
+                    <param id="0" name="Animation">&quot;Link&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5034250456431807">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8706705466860116" type="Mouse">
+                    <param id="0" name="Object">LINK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="624972689363364" type="cursor">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9965308235692866">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1472529770549482" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6630436891970865" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9349635300133262">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2179041266957249" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">LINK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9596270374130774" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sound-fx&quot;</param>
+                </action>
+                <action id="8" name="Open URL in new window" sid="6803673166430171" type="Browser">
+                    <param id="0" name="URL">&quot;https://vk.com/public131107452&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
